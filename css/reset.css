@@ -1,0 +1,88 @@
+/* CSS reset */
+body,
+div,
+dl,
+dt,
+dd,
+ul,
+ol,
+li,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+pre,
+form,
+fieldset,
+input,
+textarea,
+p,
+blockquote,
+th,
+td {
+  margin: 0;
+  padding: 0;
+  border-spacing: 0px;
+}
+html,
+body {
+  margin: 0;
+  padding: 0;
+  border-spacing: 0px;
+}
+
+/* Extra options you might want to consider*/
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+fieldset,
+img {
+  border: 0;
+  border-spacing: 0px;
+}
+input {
+  border: 0px solid #b0b0b0;
+  padding: 0px 0px 0px;
+  color: #979797;
+  width: 190px;
+  border-spacing: 0px;
+}
+address,
+caption,
+cite,
+code,
+dfn,
+th,
+var {
+  font-style: normal;
+  font-weight: normal;
+}
+ol,
+ul {
+  list-style: none;
+}
+caption,
+th {
+  text-align: left;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-size: 100%;
+  font-weight: normal;
+}
+q:before,
+q:after {
+  content: "";
+}
+abbr,
+acronym {
+  border: 0;
+}

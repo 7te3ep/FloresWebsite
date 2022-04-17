@@ -1,0 +1,315 @@
+.navbar {
+  background-color: lightgreen;
+  height: 150px;
+  border-bottom: 20px solid #ee9090;
+  border-top: 20px solid darkgreen;
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+}
+
+.onglets {
+  position: absolute;
+  font-family: "xhersregular";
+  right: 0px;
+  padding-left: 72px;
+  padding-right: 0px;
+}
+
+.onglets a {
+  text-decoration: none;
+  color: black;
+  background-color: none;
+  font-size: 207%;
+  padding-left: 30px;
+  padding-right: 30px;
+  position: relative;
+  padding-top: 80px;
+  padding-bottom: 63px;
+  bottom: -65px;
+  transition: background-color 0.4s linear, color 0.3s linear;
+}
+
+#last {
+  position: relative;
+  display: inline;
+}
+
+.onglets a:hover {
+  /* animation: hover-onglets 0.2s linear forwards; */
+  background-clip: padding-box;
+  color: #ee9090;
+  background-color: darkgreen;
+}
+
+@keyframes hover-onglets {
+  0% {
+    color: black;
+    background-color: none;
+  }
+
+  100% {
+    color: #ee9090;
+    background-color: darkgreen;
+    background-clip: padding-box;
+  }
+}
+
+nav h1 {
+  position: absolute;
+  text-decoration: none;
+  color: #ee9090;
+  font-family: "KG Red Hands";
+  font-size: 450%;
+  padding: 30px;
+  padding-left: 70px;
+}
+
+@font-face {
+  font-family: "KG Red Hands";
+  src: url("../font/logo/KGRedHands.woff2") format("woff2"),
+    url("../font/logo/KGRedHands.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "xhersregular";
+  src: url("../font/onglets/xhers_regular-webfont.woff2") format("woff2"),
+    url("../font/onglets/xhers_regular-webfont.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
+header {
+  z-index: 50;
+  position: relative;
+}
+
+.first {
+  position: relative;
+  border-bottom: 20px solid #ee9090;
+  display: block;
+}
+
+#second {
+  position: absolute;
+  display: block;
+  top: 0px;
+  transition: opacity 3s;
+  opacity: 0%;
+  z-index: 30;
+  padding-left: 0px;
+}
+
+.first,
+#second {
+  height: 600px;
+  width: 100%;
+}
+
+.roll-icon {
+  display: inline-block;
+  transition: transform 1s;
+}
+
+.roll-icon:hover {
+  transform: rotate(365deg);
+}
+
+.text-header:hover + #second {
+  opacity: 100%;
+}
+.text-header:hover {
+  background-color: rgba(0, 0, 0, 0.6);
+}
+
+.text-header:hover #line1 {
+  opacity: 100%;
+  padding-left: 155px;
+}
+
+.text-header:hover #line2 {
+  opacity: 100%;
+  padding-left: 155px;
+}
+
+.text-header:hover #line3 {
+  opacity: 100%;
+  padding-left: 155px;
+}
+
+.text-header {
+  z-index: 51;
+  position: absolute;
+  top: 0px;
+  height: 600px;
+  width: 100%;
+  display: block;
+  padding-top: 0px;
+  padding-left: 0px;
+  background-color: rgba(0, 0, 0, 0);
+  transition: background-color 1s;
+}
+.text-header li {
+  top: 0px;
+  font-family: "xhersregular";
+  color: white;
+  font-size: 580%;
+  line-height: 80px;
+  position: relative;
+  list-style: none;
+  padding-top: 100px;
+}
+
+#line1 {
+  transition: padding-left 3s, opacity 2.3s;
+  transition-delay: 0s;
+  opacity: 0%;
+  padding-left: 0px;
+}
+#line2 {
+  transition: padding-left 3s, opacity 2.3s;
+  transition-delay: 0.7s;
+  opacity: 0%;
+  padding-left: 0px;
+}
+
+#line3 {
+  transition: padding-left 3s, opacity 2.3s;
+  transition-delay: 1.3s;
+  opacity: 0%;
+  padding-left: 0px;
+}
+
+.text-header p b {
+  color: lightpink;
+}
+
+html {
+  background-color: lightpink;
+}
+
+section {
+  height: auto;
+  width: 100%;
+  background-color: red;
+  position: relative;
+}
+.title {
+  width: 100%;
+  height: 15%;
+  background-color: lightgreen;
+  top: 0px;
+  position: relative;
+  font-family: "KG Red Hands";
+  font-size: 350%;
+  text-align: center;
+  padding-top: 10px;
+  border-bottom: 20px solid darkgreen;
+}
+.shop {
+  width: auto;
+  height: 85%;
+  position: relative;
+  bottom: 0px;
+  border-bottom: 20px solid #ee9090;
+}
+.background-img {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+}
+
+.offer {
+  height: auto;
+  width: auto;
+  transition: visibility 1s, opacity 1s ease-out;
+  visibility: hidden;
+  opacity: 0;
+}
+
+.column {
+  padding: 3.5%;
+}
+
+.shop:hover .offer {
+  visibility: visible;
+  opacity: 1;
+  transform: translateX(0%);
+}
+
+.aze:hover {
+  box-shadow: 20px 20px 30px black;
+}
+
+.aze {
+  top: 10%;
+  height: auto;
+  width: auto;
+  background-color: lightgreen;
+  position: relative;
+  display: inline-block;
+  border-radius: 5%;
+  box-sizing: border-box;
+  padding: 30px;
+  margin: 3%;
+  box-shadow: 0px 0px 0px black;
+  transition: box-shadow 0.6s;
+  text-align: center;
+}
+
+.aze img {
+  width: 100%;
+  height: 100%;
+  border-radius: 10%;
+  border: #ee9090 solid 20px;
+  box-sizing: border-box;
+}
+
+.price-icon {
+  height: 65px;
+  width: 65px;
+  border-radius: 100%;
+  background-color: #ee9090;
+  position: absolute;
+  top: 60px;
+  left: 60px;
+  text-align: center;
+  padding-top: 15px;
+  box-sizing: border-box;
+  box-shadow: 5px 5px 30px white;
+  font-size: 140%;
+  font-family: "KG Red Hands";
+}
+
+.aze p {
+  text-align: center;
+  padding-top: 15px;
+  font-family: "KG Red Hands";
+  font-size: 150%;
+}
+
+.contact {
+  width: auto;
+  height: 200px;
+  background-color: darkgreen;
+  text-align: center;
+  font-size: 150%;
+  box-sizing: border-box;
+  padding-top: 35px;
+
+  overflow: hidden;
+}
+
+.contact > p {
+  font-family: "xhersregular";
+}
+
+.navbar,
+header,
+section {
+  box-shadow: 0px 30px 70px rgba(255, 255, 255, 0.5);
+}
